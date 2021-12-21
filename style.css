@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+body {
+    background-image: url(fundo.jpeg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    font-family: 'Josefin Sans', sans-serif;
+    position: relative;
+    overflow: hidden;
+}
+
+h1 {
+    font-size: 30px;
+    color: #333;
+    padding-bottom: 25px;
+    margin-top: 0;
+	text-align: center;
+}
+
+.form {
+    text-align: center;
+    width: 100%;
+    max-width: 500px;
+    padding: 60px 15px 50px 15px;
+    background-color: #FFF;
+    border-radius: 10px;
+    box-shadow: 0 3px 20px 0px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0 3px 20px 0px rgba(0, 0, 0, 0.1);
+	-webkit-box-shadow: 0 3px 20px 0px rgba(0, 0, 0, 0.1);
+	-o-box-shadow: 0 3px 20px 0px rgba(0, 0, 0, 0.1);
+	-ms-box-shadow: 0 3px 20px 0px rgba(0, 0, 0, 0.1);
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+}
+
+.form .input-model {
+    display: inline-block;
+    padding: 20px;
+    border: 1px solid #E6E6E6;
+    margin-bottom: 17px;
+    font-size: 15px;
+    color: #1B3815;
+    line-height: 1.2;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.form .hidden-model {
+    display: none;
+}
+
+.form input.input-model {
+    padding: 0 20px;
+    width: 80%;
+    height: 60px;
+}
+
+.form textarea {
+    min-height: 80px;
+    max-height: 100px;
+    width: 80%;
+    max-width: 80%;
+	min-width: 80%;
+}
+
+.form input[type="submit"] {
+    padding: 0 20px;
+    width: 160px;
+    height: 42px;
+    background-color: #57B846;
+	font-size: 14px;
+	color: #FFF;
+	line-height: 1.2;
+	text-transform: uppercase;
+	padding-top: 5px;
+	-webkit-transition: all 0.4s;
+	-o-transition: all 0.4s;
+	-moz-transition: all 0.4s;
+	transition: all 0.4s;
+	border:none;
+	cursor: pointer;
+}
+
+.form input[type="submit"]:hover {
+    background-color: #1B3815;
+}
+
+.input-model::placeholder {
+    transition: all 0.7s;
+    -webkit-transition: all 0.7s;
+}
+
+.input-model:hover::placeholder {
+    padding-left: 10px;
+}
+
+.input-model:focus::placeholder{
+    opacity: 0;
+}
+
+.input-model:valid {
+    background-color: #D5F5E3;
+    border: none;
+    margin: 0 0 19px 0;
+}
